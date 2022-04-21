@@ -1,5 +1,5 @@
 const settings = {
-  name: "wp-site-ryan",
+  name: "my-first-frontity-project",
   state: {
     frontity: {
       url: "https://test.frontity.org",
@@ -9,10 +9,28 @@ const settings = {
   },
   packages: [
     {
+      name: "@frontity/mars-theme",
+      state: {
+        theme: {
+          menu: [
+            ["Home", "/"],
+            ["Nature", "/category/nature/"],
+            ["Travel", "/category/travel/"],
+            ["Japan", "/tag/japan/"],
+            ["About Us", "/about-us/"],
+          ],
+          featured: {
+            showOnList: false,
+            showOnPost: false,
+          },
+        },
+      },
+    },
+    {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "https://practice262398583.wordpress.com",
+          url: "https://test.frontity.org",
         },
       },
     },
