@@ -17,7 +17,7 @@ const settings = {
             ["Nature", "/category/nature/"],
             ["Travel", "/category/travel/"],
             ["Japan", "/tag/japan/"],
-            ["About Us", "/about-us/"],
+            ["About Us", "/jojis-things/"],
           ],
           featured: {
             showOnList: false,
