@@ -9,14 +9,11 @@ const settings = {
   },
   packages: [
     {
-      name: "@frontity/mars-theme",
+      name: "ryan-theme",
       state: {
         theme: {
           menu: [
             ["Home", "/"],
-            ["Nature", "/category/nature/"],
-            ["Travel", "/category/travel/"],
-            ["Japan", "/tag/japan/"],
             ["About Us", "/jojis-things/"],
           ],
           featured: {
