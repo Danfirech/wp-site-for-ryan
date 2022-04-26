@@ -1,11 +1,9 @@
 import Root from "./components";
 
-const agenciesHandler = {
-  name: "agencies",
-  priority: 10,
-  pattern: "/jojis-things/",
+const jojiHandler = {
+  pattern: "/nats-things/",
   func: ({ state }) => {
-    state.source.data["/jojis-things/"].isAgencies = true;
+    state.source.data["/nats-things/"].isJoji = true;
   },
 };
 
@@ -20,10 +18,8 @@ export default {
   actions: {
     theme: {
       init: ({ libraries }) => {
-        libraries.source.handlers.push(agenciesHandler);
+        libraries.source.handlers.push(jojiHandler);
       },
-      beforeSSR: before,
-      beforeCSR: before,
     },
   },
 };
