@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "frontity";
 
-const Page = ({ state }) => {
+const Agencies = ({ state }) => {
   const data = state.source.get(state.router.link);
   const page = state.source[data.type][data.id];
 
@@ -13,4 +13,4 @@ const Page = ({ state }) => {
   );
 };
 
-export default connect(Page);
+export default connect(Agencies);

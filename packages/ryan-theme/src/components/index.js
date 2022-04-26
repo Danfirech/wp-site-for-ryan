@@ -23,6 +23,11 @@ const Header = styled.header`
   align-items: center;
 `;
 
+const Body = styled.div`
+  height: 100vh;
+  width: 100vw;
+`;
+
 const Root = ({ state }) => {
   const data = state.source.get(state.router.link);
 
@@ -51,6 +56,7 @@ const Root = ({ state }) => {
             <Page when={data.isPage} />
           </Switch>
         </main>
+        <Body>{data.isAgencies && <Agencies />}</Body>
       </Container>
     </>
   );
