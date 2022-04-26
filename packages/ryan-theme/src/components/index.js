@@ -7,6 +7,7 @@ import Switch from "@frontity/components/switch";
 import List from "./list";
 import Post from "./post";
 import Page from "./page";
+import Joji from "./jojis-things";
 
 const Container = styled.div`
   height: 1500px;
@@ -45,7 +46,7 @@ const Root = ({ state }) => {
         <nav>
           <Link link="/">Home</Link>
           <br />
-          <Link link="/jojis-things">About Us</Link>
+          <Link link="/nats-things">About Us</Link>
         </nav>
       </Header>
       <Container>
@@ -55,8 +56,8 @@ const Root = ({ state }) => {
             <Post when={data.isPost} />
             <Page when={data.isPage} />
           </Switch>
+          <Body>{data.isJoji && <Joji />}</Body>
         </main>
-        <Body>{data.isAgencies && <Agencies />}</Body>
       </Container>
     </>
   );
