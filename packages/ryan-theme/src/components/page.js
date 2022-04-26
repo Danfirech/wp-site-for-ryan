@@ -9,6 +9,7 @@ const Page = ({ state }) => {
     <div>
       <h2>{page.title.rendered}</h2>
       <div dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
+      <h4>TEST TES TEST</h4>
     </div>
   );
 };
